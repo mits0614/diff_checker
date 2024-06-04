@@ -11,5 +11,4 @@ function HighlightSwitch({ isOn, onToggle }) {
     </div>
   );
 }
-
 export default HighlightSwitch;

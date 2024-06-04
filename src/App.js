@@ -5,7 +5,7 @@ import phitsDocument2 from './phits_document2.json';
 import sourceDocument from './source_document.json';
 import sourceTypes from './sourceTypes.json';
 import AceEditor from 'react-ace';
-import 'ace-builds/src-noconflict/mode-text';
+import 'ace-builds/src-noconflict/mode-html';
 import 'ace-builds/src-noconflict/theme-github';
 import 'ace-builds/src-noconflict/theme-tomorrow';
 import 'ace-builds/src-noconflict/ext-language_tools';
@@ -142,7 +142,7 @@ function App() {
       </div>
       <div className="textarea-container">
         <AceEditor
-          mode="text"
+          mode="html"
           theme={theme}
           onChange={handleTextChange}
           value={text}
