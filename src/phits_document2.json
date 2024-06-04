@@ -1,0 +1,76 @@
+{
+  "keywords": [
+    {
+      "keyword": "m\\s*a\\s*x\\s*c\\s*a\\s*s",
+      "description": "最大ヒストリー数"
+    },
+    {
+      "keyword": "m\\s*a\\s*x\\s*b\\s*c\\s*h",
+      "description": "最大バッチ数。バッチ分散の場合、maxbch を大きくした方が計算の信頼性が高くなります。ただし、計算時間が長くなる可能性があるため注意が必要です。ヒストリー分散モードでは標準誤差は全ヒストリー数のみに依存します。"
+    },
+    {
+      "keyword": "m\\s*e\\s*s\\s*h",
+      "description": "形状メッシュ"
+    },
+    {
+      "keyword": "v\\s*o\\s*l\\s*u\\s*m\\s*e\\s*D\\s*e\\s*f\\s*i\\s*n\\s*i\\s*t\\s*i\\s*o\\s*n",
+      "description": "volume 定義文。"
+    },
+    {
+      "keyword": "-\\s*t\\s*y\\s*p\\s*e",
+      "description": "type1: 群数、分点をデータで与える。type2: 群数と最小値、最大値を与え、線形で等分点が与えられる。type3: 群数と最小値、最大値を与え、対数で等分点が与えられる。type4: メッシュ幅と最小値、最大値を与え、線形で等分点が与えられる。type5: 最小値、最大値、メッシュ幅の対数値を与え、対数で等分点が与えられる。"
+    },
+    {
+      "keyword": "a\\s*x\\s*i\\s*s",
+      "description": "出力するデータのx軸を決定する。xy,yz,xz,rz,t(時間軸)で2次元表示も可能。"
+    },
+    {
+      "keyword": "f\\s*i\\s*l\\s*e",
+      "description": "出力するファイル名。"
+    },
+    {
+      "keyword": "t\\s*i\\s*t\\s*l\\s*e",
+      "description": "出力ファイルヘッダーのタイトル。"
+    },
+    {
+      "keyword": "g\\s*s\\s*h\\s*o\\s*w",
+      "description": "領域境界、物質番号、領域番号、LAT番号を表示。gshow=5 でピクセル形式で物質色を表示。"
+    },
+    {
+      "keyword": "e\\s*p\\s*s\\s*o\\s*u\\s*t",
+      "description": "1でANGELで処理したepsファイルを作成。2で誤差棒を表示。"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*1",
+      "description": "[1/cm^2/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*2",
+      "description": "[1/cm^2/MeV/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*3",
+      "description": "[1/cm^2/Lethargy/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*4",
+      "description": "[cm/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*1\\s*1",
+      "description": "[1/cm^2 /nsec/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*1\\s*2",
+      "description": "[1/cm^2 /nsec/MeV/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*1\\s*3",
+      "description": "[1/cm^2 /Lethargy/nsec/source]"
+    },
+    {
+      "keyword": "u\\s*n\\s*i\\s*t\\s*=\\s*1\\s*4",
+      "description": "[cm/nsec/source]"
+    }
+  ]
+}

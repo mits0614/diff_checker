@@ -1,0 +1,10 @@
+.label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .switch {
+    margin-left: 10px;
+  }
+  

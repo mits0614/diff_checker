@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.textarea-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+textarea, .ace_editor {
+  width: 100%;
+  height: 300px;
+  font-family: monospace;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.recent-files {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.recent-files ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-files li {
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

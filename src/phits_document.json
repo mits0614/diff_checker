@@ -1,0 +1,276 @@
+{
+  "patterns": [
+    {
+      "pattern": "\\[\\s*t\\s*i\\s*t\\s*l\\s*e\\s*\\]",
+      "description": "計算のタイトルを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*p\\s*a\\s*r\\s*a\\s*m\\s*e\\s*t\\s*e\\s*r\\s*s\\s*\\]",
+      "description": "ヒストリー数など、計算の動作を決めるパラメータを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*s\\s*o\\s*u\\s*r\\s*c\\s*e\\s*\\]",
+      "description": "入力ソース粒子の情報を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*a\\s*t\\s*e\\s*r\\s*i\\s*a\\s*l\\s*\\]",
+      "description": "体系を構成する物質を定義します。順序はMAT[物質番号]_元素_組成比_元素 組成比_... ... "
+    },
+    {
+      "pattern": "\\[\\s*s\\s*u\\s*r\\s*f\\s*a\\s*c\\s*e\\s*\\]",
+      "description": "体系を構成する面を定義します。順序は、面番号_座標変換番号_面記号_面定義数値 "
+    },
+    {
+      "pattern": "\\[\\s*c\\s*e\\s*l\\s*l\\s*\\]",
+      "description": "体系を構成する cell を定義します。順序は、セル番号_物質番号_物質密度_セル定義文_セルパラメータ "
+    },
+    {
+      "pattern": "\\[\\s*t\\s*r\\s*a\\s*n\\s*s\\s*f\\s*o\\s*r\\s*m\\s*\\]",
+      "description": "体系を構成する面などの座標変換を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*e\\s*m\\s*p\\s*e\\s*r\\s*a\\s*t\\s*u\\s*r\\s*e\\s*\\]",
+      "description": "cell の温度を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*a\\s*t\\s* \\s*t\\s*i\\s*m\\s*e\\s* \\s*c\\s*h\\s*a\\s*n\\s*g\\s*e\\s*\\]",
+      "description": "物質の時間変化を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*a\\s*g\\s*n\\s*e\\s*t\\s*i\\s*c\\s* \\s*f\\s*i\\s*e\\s*l\\s*d\\s*\\]",
+      "description": "体系を構成する領域の磁場を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*e\\s*l\\s*e\\s*c\\s*t\\s*r\\s*o\\s* \\s*m\\s*a\\s*g\\s*n\\s*e\\s*t\\s*i\\s*c\\s* \\s*f\\s*i\\s*e\\s*l\\s*d\\s*\\]",
+      "description": "体系を構成する領域の電磁混合場を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*d\\s*e\\s*l\\s*t\\s*a\\s* \\s*r\\s*a\\s*y\\s*\\]",
+      "description": "δ 線を発生させます。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*r\\s*a\\s*c\\s*k\\s* \\s*s\\s*t\\s*r\\s*u\\s*c\\s*t\\s*u\\s*r\\s*e\\s*\\]",
+      "description": "飛跡構造解析モードを使用するための設定を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*s\\s*u\\s*p\\s*e\\s*r\\s* \\s*m\\s*i\\s*r\\s*r\\s*o\\s*r\\s*\\]",
+      "description": "低エネルギー中性子のスーパーミラーを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*e\\s*l\\s*a\\s*s\\s*t\\s*i\\s*c\\s* \\s*o\\s*p\\s*t\\s*i\\s*o\\s*n\\s*\\]",
+      "description": "低エネルギー中性子の弾性衝突のオプションを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*d\\s*a\\s*t\\s*a\\s* \\s*m\\s*a\\s*x\\s*\\]",
+      "description": "核種毎に核データライブラリを利用する上限エネルギーを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*f\\s*r\\s*a\\s*g\\s* \\s*d\\s*a\\s*t\\s*a\\s*\\]",
+      "description": "ユーザー指定断面積読み込み機能について定義します。"
+    },
+    {
+      "pattern": "\\[\\s*i\\s*m\\s*p\\s*o\\s*r\\s*t\\s*a\\s*n\\s*c\\s*e\\s*\\]",
+      "description": "領域の importance を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*w\\s*e\\s*i\\s*g\\s*h\\s*t\\s* \\s*w\\s*i\\s*n\\s*d\\s*o\\s*w\\s*\\]",
+      "description": "領域の weight window を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*w\\s*w\\s* \\s*b\\s*i\\s*a\\s*s\\s*\\]",
+      "description": "[weight window] のパラメータにかけるバイアスを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*f\\s*o\\s*r\\s*c\\s*e\\s*d\\s* \\s*c\\s*o\\s*l\\s*l\\s*i\\s*s\\s*i\\s*o\\s*n\\s*s\\s*\\]",
+      "description": "強制衝突の領域とファクターを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*R\\s*e\\s*p\\s*e\\s*a\\s*t\\s*e\\s*d\\s* \\s*c\\s*o\\s*l\\s*l\\s*i\\s*s\\s*i\\s*o\\s*n\\s*s\\s*\\]",
+      "description": "核反応の繰返し衝突の領域とファクターを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*v\\s*o\\s*l\\s*u\\s*m\\s*e\\s*\\]",
+      "description": "体系を構成する領域の体積を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*u\\s*l\\s*t\\s*i\\s*p\\s*l\\s*i\\s*e\\s*r\\s*\\]",
+      "description": "multiplier を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*a\\s*t\\s* \\s*n\\s*a\\s*m\\s*e\\s* \\s*c\\s*o\\s*l\\s*o\\s*r\\s*\\]",
+      "description": "物質表示の名前、色、大きさを指定します。"
+    },
+    {
+      "pattern": "\\[\\s*r\\s*e\\s*g\\s* \\s*n\\s*a\\s*m\\s*e\\s*\\]",
+      "description": "領域表示の名前、大きさを指定します。"
+    },
+    {
+      "pattern": "\\[\\s*c\\s*o\\s*u\\s*n\\s*t\\s*e\\s*r\\s*\\]",
+      "description": "counter を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*i\\s*m\\s*e\\s*r\\s*\\]",
+      "description": "粒子の固有時間をリセット、ストップを定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*u\\s*l\\s*t\\s*i\\s*p\\s*l\\s*i\\s*e\\s*r\\s*\\]",
+      "description": "multiplier を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*m\\s*u\\s*l\\s*t\\s*i\\s*p\\s*l\\s*i\\s*e\\s*r\\s*\\]",
+      "description": "multiplier を定義します。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*t\\s*r\\s*a\\s*c\\s*k\\s*\\]",
+      "description": "粒子の飛跡長 (track length) やフルエンスを導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*c\\s*r\\s*o\\s*s\\s*s\\s*\\]",
+      "description": "粒子の面横断回数やフルエンスを導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*p\\s*o\\s*i\\s*n\\s*t\\s*\\]",
+      "description": "ある点や線上のフルエンスを導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*d\\s*e\\s*p\\s*o\\s*s\\s*i\\s*t\\s*\\]",
+      "description": "物質におけるエネルギー付与を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*d\\s*e\\s*p\\s*o\\s*s\\s*i\\s*t\\s*2\\s*\\]",
+      "description": "2 つの領域でのエネルギー付与の相関を出力するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*h\\s*e\\s*a\\s*t\\s*\\]",
+      "description": "物質におけるエネルギー付与を導出するタリー。(非推奨)"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*y\\s*i\\s*e\\s*l\\s*d\\s*\\]",
+      "description": "残留核の生成量を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*p\\s*r\\s*o\\s*d\\s*u\\s*c\\s*t\\s*\\]",
+      "description": "線源や核反応による生成粒子を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*d\\s*p\\s*a\\s*\\]",
+      "description": "原子あたりのはじき出し数 (DPA) を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*l\\s*e\\s*t\\s*\\]",
+      "description": "LET の関数として飛跡長や線量を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*s\\s*e\\s*d\\s*\\]",
+      "description": "微小領域におけるエネルギー付与分布を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*t\\s*i\\s*m\\s*e\\s*\\]",
+      "description": "Energy cut off と escape 粒子の個数を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*i\\s*n\\s*t\\s*e\\s*r\\s*a\\s*c\\s*t\\s*\\]",
+      "description": "(従来の [t-star])反応数を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*d\\s*c\\s*h\\s*a\\s*i\\s*n\\s*\\]",
+      "description": "DCHAIN 用入力ファイルを作成するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*w\\s*w\\s*g\\s*\\]",
+      "description": "[weight window] のパラメータを出力するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*w\\s*w\\s*b\\s*g\\s*\\]",
+      "description": "[ww bias] のパラメータを出力するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*v\\s*o\\s*l\\s*u\\s*m\\s*e\\s*\\]",
+      "description": "体積自動計算機能のためのタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*u\\s*s\\s*e\\s*r\\s*d\\s*e\\s*f\\s*i\\s*n\\s*e\\s*d\\s*\\]",
+      "description": "ユーザー定義による任意の物理量を導出するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*g\\s*s\\s*h\\s*o\\s*w\\s*\\]",
+      "description": "ジオメトリ(仮想空間)を 2 次元で表示するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*r\\s*s\\s*h\\s*o\\s*w\\s*\\]",
+      "description": "ジオメトリを 2 次元で物理量による色分けをして表示するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*t\\s*-\\s*3\\s*d\\s*s\\s*h\\s*o\\s*w\\s*\\]",
+      "description": "ジオメトリを 3 次元で表示するタリー。"
+    },
+    {
+      "pattern": "\\[\\s*e\\s*n\\s*d\\s*\\]",
+      "description": "入力ファイルの終了を示します。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*0",
+      "description": "通常の粒子輸送計算。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*1",
+      "description": "断面積・カーマファクター出力モード(/phits/sample/icntl1 参照)"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*3",
+      "description": "inputechoの書き出し。メモリー空間、ライブラリー、ファイルのチェック用。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*5",
+      "description": "全てを真空 (void)領域とし、粒子の反応や散乱、電離等が起こらない輸送計算を実行する。geometry check や体積・面積計算の際に使用する。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*6",
+      "description": "ソースのチェック。[t-product] で線源粒子をタリーできる。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*7",
+      "description": "[t-gshow] タリーの実行。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*8",
+      "description": "xyz メッシュタリーの gshow オプションのあるものの幾何形状表示。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*9",
+      "description": "[t-rshow] タリーの実行。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*10",
+      "description": "reg メッシュタリーの rshow オプションのあるものの幾何形状表示。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*11",
+      "description": "[t-3dshow](3 次元幾何形状表示タリー)の実行。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*12",
+      "description": "dumpall ファイルから読み込んで再計算。file(15) で出力ファイルを指定。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*13",
+      "description": "タリー結果の統合機能(Sumtally 機能)の利用。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*14",
+      "description": "体積自動計算機能の利用。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*15",
+      "description": "[t-wwbg] タリーの実行。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*16",
+      "description": "分析機能スクリプトの利用。"
+    },
+    {
+      "pattern": "icntl\\s*=\\s*17",
+      "description": "[anatally] セクションの実行。"
+    }
+  ]
+}
