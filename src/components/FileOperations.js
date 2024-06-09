@@ -1,26 +1,45 @@
-import React from 'react';
-import './FileOperations.css';
+export function readFile() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.inp';
 
-function FileOperations({ onOpenFile }) {
-  const handleFileRead = (event) => {
-    const file = event.target.files[0];
+  input.onchange = e => {
+    const file = e.target.files[0];
+    if (!file) {
+      alert('ファイルが選択されませんでした');
+      return;
+    }
+
     const reader = new FileReader();
-    reader.onload = (e) => {
-      onOpenFile(e.target.result);
+    reader.onload = event => {
+      document.getElementById('editor1').env.document.setValue(event.target.result);
+    };
+    reader.onerror = () => {
+      alert('ファイルの読み込みに失敗しました');
     };
     reader.readAsText(file);
   };
 
-  return (
-    <div>
-      <button className="button">
-        <label>
-          Open File
-          <input type="file" accept=".inp" style={{ display: 'none' }} onChange={handleFileRead} />
-        </label>
-      </button>
-    </div>
-  );
+  input.click();
 }
 
-export default FileOperations;
+export function saveFile() {
+  let isContentChanged = false;
+
+  document.getElementById('editor1').env.document.on('change', () => {
+    isContentChanged = true;
+  });
+
+  if (!isContentChanged) {
+    alert('変更がありません');
+    return;
+  }
+
+  const text = document.getElementById('editor1').env.document.getValue();
+  const blob = new Blob([text], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'output.inp';
+  a.click();
+  isContentChanged = false;
+}
